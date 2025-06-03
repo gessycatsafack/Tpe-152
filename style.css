@@ -1,0 +1,52 @@
+{background-fonts:font.jpg /* couleur de fond */}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf0;
+    color:black
+}
+
+header {
+    background-color:#baff80;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.about, .gallery, .contact {
+    padding: 20px;
+}
+
+.gallery .grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #afff40;
+    position: relative;
+    bottom: 0;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

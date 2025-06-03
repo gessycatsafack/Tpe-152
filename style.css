@@ -1,45 +1,51 @@
-{background-fonts:font.jpg /* couleur de fond */}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fffaf0;
-    color:black
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
 }
 
-header {
-    background-color:#baff80;
-    padding: 20px;
-    text-align: center;
+.form-container {
+  max-width: 700p
+  padding: 25px;
+  border-radius: 12px;
 }
 
-header h1 {
-    margin: 0;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
 }
 
-.about, .gallery, .contact {
-    padding: 20px;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.gallery .grid {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.gallery img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+label {
+  display: block;
+  margin-top: 8px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #afff40;
-    position: relative;
-    bottom: 0;
+textarea {
+  min-height: 80px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px
+}
+
+button:hover {
+  background: #0056b3;
 }
 @media (max-width: 768px) {
   .menu {

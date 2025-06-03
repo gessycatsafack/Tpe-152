@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Commande</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Formulaire de Commande</h1>
+    <form>
+        <legend>Informations du client</legend>
+        <label for="nom complet"> nom :</label>
+        <input type="text" id="Nom complet" required>
+        <label for="tel">téléphone :</label>
+        <input type="tel" id="Téléphone" required>
+        <label type="e-mail"> aderesse e-mail :</label>
+        <input type="email" id="Adresse e-mail" required>
+        <label type="lieu">adresse de livraison :</label>
+        <input type="text" id="Adresse de livraison">
+     
+        <legend>Détails de la commande</legend>
+        <label><input type="checkbox" name="type" value="bouquet"> Bouquet d'argent</label>
+        <label><input type="checkbox" name="type" value="decoration"> Décoration personnalisée</label>
+        <label><input type="checkbox" name="type" value="autre"> Autre</label>
+        <label type="préférence"> preciser le thème ou les couleurs </label>
+        <input type="text" id="Précisez le thème ou les couleurs">
+        <label type="date">date :</label>
+        <input type="date" required>
+        <label type="montant">budget approximatif :</label>
+        <input type="text" id="Budget approximatif">
+      
+      <button type="submit">Envoyer la commande</button>
+      <button type="reset">annuler la commande</button>
+    </form>
+  </div>
+</body>
+</html>
